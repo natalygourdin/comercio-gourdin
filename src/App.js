@@ -1,26 +1,25 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
-import NavBar  from './components/NavBar';
+import { NavBar } from './components/NavBar';
+import { ItemListContainer } from './components/ItemListContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <NavBar />
+          <div className="container">        
+                      <div className="row">        
+                            <div className="col-md-4 pt-2">        
+                              <img src={logo} className="App-logo" alt="logo" />
+                            </div>
 
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-       COMERCIO - GOURDIN
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+                          <div className="col-md-7 pt-2">        
+                              <NavBar />
+                            </div>
+                      </div>
+                      <ItemListContainer mensaje = "Productos sublimados" />
+
+          </div>
     </div>
   );
 }
