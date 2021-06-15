@@ -35,3 +35,9 @@
 .nav-link:hover{color: #555 !important;}
 .text-pink { color:#db0054}
 i:hover { color:#555}
+.bg-pink{
+  background-color: #db0054;
+}
+button{ cursor: pointer; text-transform: uppercase;border-radius: 6px;}
+.iButton{font-size: 16px;}
+.iButton:hover{color: #db0054!important;}

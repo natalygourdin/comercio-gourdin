@@ -18,7 +18,6 @@ function App() {
                             </div>
                       </div>
                       <ItemListContainer mensaje = "Productos sublimados" />
-
           </div>
     </div>
   );
